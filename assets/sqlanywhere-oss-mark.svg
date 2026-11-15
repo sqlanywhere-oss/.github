@@ -3,7 +3,6 @@
   <g fill="none" stroke="#fff" stroke-width="56" stroke-linecap="round">
     <ellipse cx="512" cy="312" rx="216" ry="72"/>
     <path d="M296 312v400a216 72 0 0 0 432 0V312"/>
-    <path d="M296 445a216 72 0 0 0 432 0"/>
-    <path d="M296 578a216 72 0 0 0 432 0"/>
   </g>
+  <path d="M570 404 420 600h92l-46 132 156-210h-96z" fill="#fff" stroke="#fff" stroke-width="20" stroke-linejoin="round"/>
 </svg>
