@@ -1,37 +1,30 @@
-<div align="center">
+<h3 align="center">
+  <img src="https://raw.githubusercontent.com/sqlanywhere-oss/.github/master/assets/sqlanywhere-oss-mark.png" width="100" alt="sqlanywhere-oss logo"/><br/>
+  <img src="https://raw.githubusercontent.com/sqlanywhere-oss/.github/master/assets/sqlanywhere-oss-mark.png" height="30" width="0px"/>
+  sqlanywhere-oss
+  <img src="https://raw.githubusercontent.com/sqlanywhere-oss/.github/master/assets/sqlanywhere-oss-mark.png" height="30" width="0px"/>
+</h3>
 
-# sqlanywhere-oss
-##### Open-source tooling for SAP SQL Anywhere 17
+<h6 align="center">
+  <a href="https://github.com/sqlanywhere-oss/sqlanywhere-grammar">Grammar</a>
+  ·
+  <a href="https://github.com/orgs/sqlanywhere-oss/repositories">Repositories</a>
+</h6>
 
-<img alt="sqlanywhere-oss logo" height="200" src="https://raw.githubusercontent.com/sqlanywhere-oss/.github/master/assets/sqlanywhere-oss-mark.svg" />
+&nbsp;
 
-</div>
+<p align="center">
+  Open-source tooling for SAP SQL Anywhere 17, built in Rust on one parser that reads Watcom-SQL and Transact-SQL
+  the way the engine does: a grammar, a language server, a formatter and a linter, with editor support for VS Code
+  and Neovim.
+</p>
 
-PostgreSQL users take a lot for granted: an exact parser anyone can embed, formatters, linters, language servers,
-debuggers in the editor, schema as code, a good console. SQL Anywhere 17 has almost none of it. This organization builds
-that tooling, in Rust, following PostgreSQL's tools wherever there is a counterpart.
+&nbsp;
 
-Everything stands on one parser that reads SQL the way the engine does, Watcom-SQL and Transact-SQL alike, checked
-statement by statement against a live engine rather than against the manuals.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sqlanywhere-oss/.github/master/assets/social-preview.png" width="720" alt="sqlanywhere-oss banner"/>
+</p>
 
-## Projects
-
-| Repository | What it is | Status |
-|---|---|---|
-| [sqlanywhere-grammar](https://github.com/sqlanywhere-oss/sqlanywhere-grammar) | The grammar (grmtools), a lossless lexer, a parser that behaves like the engine's, and the conformance suite; later `libsqla_query`, the counterpart of `libpg_query` | In progress |
-| sqlanywhere-tools | `sqla`: the command line, language server, debug adapter, formatter, linter and MCP server | Planned |
-| vscode-sqlanywhere | The VS Code extension | Planned |
-| sqlanywhere.nvim | The Neovim plugin | Planned |
-
-## Principles
-
-- **Follow PostgreSQL.** Where a PostgreSQL tool has a counterpart here, we copy its shape, names and conventions.
-- **Watcom-SQL and Transact-SQL are equal.** Every feature handles both, and every test corpus has both.
-- **VS Code and Neovim are equal.** Editor features ship in both in the same release.
-- **Windows, Linux and macOS** are all built and tested in CI.
-- **Nothing from SAP is redistributed**: not the engine, not the manuals, not statements copied from them.
-
-## Legal
-
-This is an unofficial community project, not affiliated with or endorsed by SAP SE. SAP and SQL Anywhere are trademarks
-of SAP SE.
+<p align="center">
+  <sub>Unofficial; not affiliated with or endorsed by SAP SE. SAP and SQL Anywhere are trademarks of SAP SE.</sub>
+</p>
