@@ -1,8 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="sqlanywhere-oss">
-  <rect x="64" y="64" width="896" height="896" rx="200" fill="#0a0a0a" stroke="#d6d6d6" stroke-width="6"/>
-  <g fill="none" stroke="#fff" stroke-width="56" stroke-linecap="round">
-    <ellipse cx="512" cy="312" rx="216" ry="72"/>
-    <path d="M296 312v400a216 72 0 0 0 432 0V312"/>
+  <title>sqlanywhere-oss</title>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B1B26"/><stop offset="1" stop-color="#09090E"/></linearGradient>
+    <radialGradient id="glow" cx="512" cy="600" r="420" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF9F2E" stop-opacity="0.20"/><stop offset="1" stop-color="#FF9F2E" stop-opacity="0"/></radialGradient>
+    <linearGradient id="steel" gradientUnits="userSpaceOnUse" x1="0" y1="226" x2="0" y2="786"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#A9A9BE"/></linearGradient>
+    <linearGradient id="bolt" gradientUnits="userSpaceOnUse" x1="0" y1="372" x2="0" y2="808"><stop offset="0" stop-color="#FFE14D"/><stop offset="0.5" stop-color="#FFA62B"/><stop offset="1" stop-color="#FF5E3A"/></linearGradient>
+    <path id="b" d="M584 372 404 612h112l-56 196 196-262H540z"/>
+    <mask id="cut" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <rect width="1024" height="1024" fill="#fff"/>
+      <use href="#b" fill="#000" stroke="#000" stroke-width="56" stroke-linejoin="round"/>
+    </mask>
+  </defs>
+  <rect x="64" y="64" width="896" height="896" rx="200" fill="url(#tile)"/>
+  <rect x="64" y="64" width="896" height="896" rx="200" fill="url(#glow)"/>
+  <rect x="71" y="71" width="882" height="882" rx="193" fill="none" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="14"/>
+  <g fill="none" stroke="url(#steel)" stroke-width="48" stroke-linecap="round" mask="url(#cut)">
+    <ellipse cx="512" cy="300" rx="224" ry="74"/>
+    <path d="M288 300v412a224 74 0 0 0 448 0V300"/>
   </g>
-  <path d="M570 404 420 600h92l-46 132 156-210h-96z" fill="#fff" stroke="#fff" stroke-width="20" stroke-linejoin="round"/>
+  <use href="#b" fill="url(#bolt)" stroke="url(#bolt)" stroke-width="16" stroke-linejoin="round"/>
 </svg>
